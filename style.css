@@ -30,15 +30,14 @@ a {
 	width: 50px;
 }
 .btn-group-1 svg,
-.btn-group-2 svg {
+.btn-group-2 svg,
+.header svg {
 	height: 25px;
 	width: 25px;
 }
 .sidebar svg path {
 	fill: whitesmoke;
 }
-
-/* make anchors flex items */
 .sidebar a {
 	display: flex;
 	align-items: center;
@@ -59,6 +58,36 @@ a {
 .header {
 	background-color: white;
 	grid-column: 2 / 3;
+	display: grid;
+	grid-template-rows: 1fr 2fr;
+	padding: 15px;
+}
+.header-row-1 {
+	display: grid;
+	grid-template-columns: 3fr 1fr;
+	align-items: center;
+}
+.search-wrapper {
+	display: flex;
+	align-items: center;
+	gap: 15px;
+}
+.search-bar {
+	height: 25px;
+	width: 70%;
+	border-radius: 50px;
+	background: #e3e3e3;
+}
+.right-nav-content {
+	display: flex;
+	gap: 15px;
+	align-items: center;
+	justify-content: end;
+}
+.account-img img {
+	height: 35px;
+	width: 35px;
+	border-radius: 100%;
 }
 .main-content {
 	background: #e3e3e3;
