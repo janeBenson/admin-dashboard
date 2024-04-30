@@ -73,16 +73,29 @@ a {
 	gap: 15px;
 }
 .search-bar {
+	display: flex;
+	align-items: center;
 	height: 25px;
 	width: 70%;
+	padding-left: 25px;
 	border-radius: 50px;
 	background: #e3e3e3;
+}
+.search-bar input {
+	width: 80%;
+	background-color: transparent;
+	border: none;
+}
+.search-bar input:focus {
+	outline: none;
 }
 .right-nav-content {
 	display: flex;
 	gap: 15px;
 	align-items: center;
 	justify-content: end;
+	padding-right: 20px;
+	font-weight: bold;
 }
 .account-img img {
 	height: 35px;
