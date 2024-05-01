@@ -140,17 +140,13 @@ a {
 
 .main-content {
 	display: grid;
-	grid-template-columns: 3fr 1fr;
+	grid-template-columns: 3.5fr 1fr;
 	grid-template-rows: max-content;
-	gap: 10px;
+	gap: 25px;
 	padding: 25px;
 	background: #e3e3e3;
 }
-.announcements {
-	grid-column: 2 / 3;
-}
 .projects {
-	grid-row: 2 / 3;
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 	gap: 30px;
@@ -160,18 +156,14 @@ a {
 	grid-template-columns: auto 98%;
 	height: 200px;
 	overflow: hidden;
-	border-radius: 8px;
-	background-color: white;
-	box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 .decorative-strip {
 	background: #f95959;
 }
 .content {
 	display: grid;
-	grid-template-rows: auto 1fr auto;
+	grid-template-rows: auto 1fr;
 	gap: 7px;
-	padding: 25px;
 }
 .content .project-body {
 	font-weight: normal;
@@ -189,6 +181,38 @@ a {
 	fill: #565656;
 }
 .your-projects,
-.announcements {
+.announcements,
+.trending {
+	margin-bottom: 12px;
 	font-size: 18px;
+}
+.announcements-content {
+	display: grid;
+}
+
+.announcements-content,
+.projects > * {
+	border-radius: 8px;
+	background-color: white;
+	box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+	color: #636c76;
+}
+.card-title {
+	padding-bottom: 5px;
+	font-size: 12px;
+	color: black;
+}
+.card-body {
+	font-weight: normal;
+	font-size: 11px;
+}
+.content,
+.announcements-content {
+	padding: 25px;
+}
+hr {
+	width: 100%;
+}
+.title {
+	color: black;
 }
