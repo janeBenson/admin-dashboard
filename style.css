@@ -131,6 +131,7 @@ a {
 }
 .header-btn-wrapper button {
 	height: 32px;
+	min-width: 55px;
 	border: none;
 	border-radius: 50px;
 	background-color: #233142;
