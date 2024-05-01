@@ -19,21 +19,22 @@ a {
 	grid-row: 1 / 3;
 	display: grid;
 	grid-auto-rows: max-content;
-	gap: 50px;
+	gap: 65px;
+	padding: 25px;
 	background: #233142;
 	color: whitesmoke;
-	font-size: 16px;
+	font-size: 19px;
 	font-weight: 500;
 }
 .sidebar .logo svg {
-	height: 50px;
-	width: 50px;
+	height: 65px;
+	width: 65px;
 }
 .btn-group-1 svg,
 .btn-group-2 svg,
 .header svg {
-	height: 25px;
-	width: 25px;
+	height: 30px;
+	width: 30px;
 }
 .sidebar svg path {
 	fill: whitesmoke;
@@ -44,16 +45,12 @@ a {
 	gap: 15px;
 }
 .logo {
-	gap: 10px;
-	padding-top: 20px;
-	padding-left: 15px;
-	font-size: 20px;
+	font-size: 25px;
 }
 .btn-group-1,
 .btn-group-2 {
 	display: grid;
-	gap: 10px;
-	padding-left: 22px;
+	gap: 15px;
 }
 .header {
 	background-color: white;
@@ -158,6 +155,9 @@ a {
 	display: grid;
 	grid-template-columns: auto 98%;
 	overflow: hidden;
+}
+.projects > *:hover {
+	filter: brightness(85%);
 }
 .decorative-strip {
 	background: #f95959;
